@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    bool isGameOver = false;
+   public bool isGameOver = false;
 }
