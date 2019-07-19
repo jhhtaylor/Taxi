@@ -391,6 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9734b0745ce6b204fa9ee9e27e5cd65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GC: {fileID: 1053950160}
+  laneNum: 2
 --- !u!65 &863979780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -421,7 +423,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0bf46da8b5b49004c82801644942c2fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -457,8 +459,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863979778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -10.89}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.5, y: 2, z: -10.89}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -591,6 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675daa49b8ab8824aaf09c27dc3589ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameOver: 0
 --- !u!4 &1053950161
 Transform:
   m_ObjectHideFlags: 0
