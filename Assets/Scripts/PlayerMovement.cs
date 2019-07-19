@@ -1,12 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public GameController GC;
     public int laneNum = 2;
+    public int custNum = 0;
+    public Text custText;
+    public Text gameOverText;
+    
 
+    void Update()
+    {
+        ///restart
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
     void FixedUpdate()
     {
         if (true)
@@ -24,5 +38,28 @@ public class PlayerMovement : MonoBehaviour
 
             }
         }
+        if(custNum < 0)
+        {
+            gameOverText.gameObject.SetActive(true);
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.collider.tag == "Customer")
+        {
+            Debug.Log("Picked up customer");
+            custNum++;
+            Debug.Log("Customers: " + custNum);
+           
+        }
+
+        if(other.collider.tag == "Car")
+        {
+            Debug.Log("Hit a car");
+            custNum--;
+            Debug.Log("Customers: " + custNum);
+        }
+        custText.text = "Customers: "+custNum.ToString();
     }
 }
