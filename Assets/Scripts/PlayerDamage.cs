@@ -28,9 +28,15 @@ public class PlayerDamage : MonoBehaviour
     {
         print("Collided");
 
-        if (collision.gameObject.tag == "Car") {
+        /*if (collision.gameObject.tag == "Car") {
             money -= 50;
             print(money);
-        }
+        }*/
+    }
+
+    public void loseMoney()
+    {
+        money -= 20;
+        print(money);
     }
 }
