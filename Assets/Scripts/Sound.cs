@@ -9,7 +9,7 @@ public class Sound : MonoBehaviour
 
     public AudioClip beep;
     public AudioClip crash;
-   //public AudioClip hailing;
+   public AudioClip hailing;
     public AudioClip PoliceSiren;
     private AudioSource soundAudio;
 
@@ -35,6 +35,7 @@ public class Sound : MonoBehaviour
         soundAudio.PlayOneShot (beep);
         soundAudio.PlayOneShot(crash);
         soundAudio.PlayOneShot(PoliceSiren);
+        soundAudio.PlayOneShot(hailing);
 
     }
 }
