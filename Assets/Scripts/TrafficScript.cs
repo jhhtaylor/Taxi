@@ -24,6 +24,11 @@ public class TrafficScript : MonoBehaviour
     {
 
             transform.position -= new Vector3(0, 0, speed);
+
+        if (transform.position.z < 45)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
