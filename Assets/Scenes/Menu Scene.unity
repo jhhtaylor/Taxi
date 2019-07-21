@@ -743,12 +743,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 864898935}
-    characterCount: 145
+    characterCount: 176
     spriteCount: 0
-    spaceCount: 21
-    wordCount: 17
+    spaceCount: 26
+    wordCount: 21
     linkCount: 0
-    lineCount: 10
+    lineCount: 12
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1355,8 +1355,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447375230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4079285, y: 10.262497, z: -46.875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.4079285, y: 71, z: -46.875}
+  m_LocalScale: {x: 1.4402, y: 1.4402, z: 1.4402}
   m_Children:
   - {fileID: 1938410389}
   - {fileID: 1671749044}
