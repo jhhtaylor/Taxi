@@ -801,6 +801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop
       objectReference: {fileID: 0}
+    - target: {fileID: 4078253131940794000, guid: 5cda44f7012eb9e41ba622c0e5452fe6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2198643185699268304, guid: 5cda44f7012eb9e41ba622c0e5452fe6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1711,6 +1716,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Customer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641672587099131887, guid: d8d081e548c98c545b34ad74630fc219,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7641672587099131883, guid: d8d081e548c98c545b34ad74630fc219,
         type: 3}
