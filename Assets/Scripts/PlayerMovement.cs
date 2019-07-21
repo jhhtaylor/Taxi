@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Picked up customer");
             custNum++;
             Debug.Log("Customers: " + custNum);
-           
+            Sound.Instance.PlayOneShot(Sound.Instance.hailing);
         }
 
         if(other.collider.tag == "Car")
@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Hit a car");
             custNum--;
             Debug.Log("Customers: " + custNum);
+            Sound.Instance.PlayOneShot(Sound.Instance.crash);
         }
         custText.text = "Customers: "+custNum.ToString();
     }
