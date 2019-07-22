@@ -48,7 +48,7 @@ public class LevelSpawnScript : MonoBehaviour
             }
             if (rand == 1 || rand == 2 || rand == 3 || rand == 4)
             {
-                trafficClone = Instantiate(trafficPrefab, new Vector3(xPos, 1.88f, 80), trafficPrefab.transform.rotation);
+                trafficClone = Instantiate(trafficPrefab, new Vector3(xPos, 1.55f, 80), trafficPrefab.transform.rotation);
             }
             if (rand == 5 || rand == 6 || rand == 7 || rand == 8)
             {
